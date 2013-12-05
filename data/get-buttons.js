@@ -1,17 +1,15 @@
-// When the user hits return, send the "text-entered"
-// message to main.js.
-// The message payload is the contents of the edit box.
 var bind = document.getElementById("bind");
 bind.addEventListener('click', function click(event) {
 	self.port.emit('bind_now');
 }, false);
  
-// Listen for the "show" event being sent from the
-// main add-on code. It means that the panel's about
-// to be shown.
-//
-// Set the focus to the text area so the user can
-// just start typing.
-self.port.on("show", function onShow() {
 
-});
+var next = document.getElementById("next");
+next.addEventListener('click', function click(event){
+	self.port.emit('next');
+}, false);
+
+var last = document.getElementById("last");
+next.addEventListener('click', function click(event){
+	self.port.emit('last');
+}, false);
