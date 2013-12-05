@@ -2,14 +2,31 @@
  
 <head>
     <style type="text/css" media="all">
+    	#song_title {
+    		height: 50px;
+    		width: 100%;
+    	}
+    	#controls {
+    		width: 100%;
+    		margin-left: 20px;
+    	}
+    	footer {
+    		padding-top: 20px;
+    		margin-left: 37px;
+    		width: 100%;
+    	}
     </style>
   </head>
  
 <body>
 	<div id="song_title">No song currently playing</div>
-	<button id="bind">Bind This Playlist</button>
-	<button id="last">Last song</button>
-    <button id="next">Next song</button>
+	<div id="controls">
+		<button id="last">Last song</button>
+	    <button id="next">Next song</button>
+	</div>
+	<footer>
+    	<button id="bind">Bind This Playlist</button>
+    </footer>
   </body>
  
 </html>
